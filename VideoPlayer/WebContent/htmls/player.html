@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jwplayer/jwplayer.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/myskin.css"></link>
+</head>
+
+<body>
+
+<div id="container">Loading the player ...</div>
+
+    <script type="text/javascript">
+
+       jwplayer("container").setup({
+				    	  autostart: true,
+				    	  
+                          flashplayer: "../jwplayer/player.swf",
+
+                          file: "../vfile/video.mp4",
+
+                          height: 270,
+
+                          width: 480,
+                          
+                          playlist: [
+
+                              { duration: 32, file: "../vfile/video.mp4"},
+
+                              { duration: 124, file: "../vfile/test.mp4"},
+
+                              { duration: 542, file: "../vfile/test2.mp4"}
+
+	                     ],
+	
+	                     "playlist.position": "right",
+	
+	                     "playlist.size": 360,
+      });
+
+   </script>
+   
+   
+    <video 
+
+        src="../vfile/video.mp4"
+
+        height="270"
+
+        id="container"
+
+        
+
+        width="480">
+
+    </video>
+
+ <!--    <script type="text/javascript">
+
+        jwplayer("container").setup({
+
+            flashplayer: "../jwplayer/player.swf"
+
+        });
+
+    </script> -->
+
+
+</body>
+</html>
